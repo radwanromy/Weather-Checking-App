@@ -2,8 +2,27 @@
   <div class="upper-data">
     <img src="../assets/hot.png" *ngIf="14 > 15">
     <img src="../assets/cold.png" *ngIf="14 <= 15">
+    <div class="weather-data">
+      <div class="location">Wellington</div>
+      <div class="temperature">{{14.40| number: '1.0-0'}}</div>
+    </div>
   </div>
   <div class="lower-data">
+    <div class="more-info-label">
+      More Information
+    </div>
+    <div class="more-info-container">
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../assets/min.png" alt="">
+          <span>Min</span>
+        </div>
+        <div class="info-block-value">
+          10°C
+        </div>
+      </div>
+
+    </div>
 
   </div>
 </div>
