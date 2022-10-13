@@ -11,9 +11,9 @@ export interface WeatherData {
     alerts: any[]
     stations: Stations
     currentConditions: CurrentConditions
-  }
-  
-  export interface Day {
+}
+
+export interface Day {
     datetime: string
     datetimeEpoch: number
     temp_max: number
@@ -51,9 +51,9 @@ export interface WeatherData {
     stations: string[]
     source: string
     hours: Hour[]
-  }
-  
-  export interface Hour {
+}
+
+export interface Hour {
     datetime: string
     datetimeEpoch: number
     temp: number
@@ -79,14 +79,14 @@ export interface WeatherData {
     icon: string
     stations?: string[]
     source: string
-  }
-  
-  export interface Stations {
+}
+
+export interface Stations {
     NZAA: Nzaa
     C4778: C4778
-  }
-  
-  export interface Nzaa {
+}
+
+export interface Nzaa {
     distance: number
     latitude: number
     longitude: number
@@ -95,9 +95,9 @@ export interface WeatherData {
     name: string
     quality: number
     contribution: number
-  }
-  
-  export interface C4778 {
+}
+
+export interface C4778 {
     distance: number
     latitude: number
     longitude: number
@@ -106,9 +106,9 @@ export interface WeatherData {
     name: string
     quality: number
     contribution: number
-  }
-  
-  export interface CurrentConditions {
+}
+
+export interface CurrentConditions {
     datetime: string
     datetimeEpoch: number
     temp: number
@@ -137,5 +137,4 @@ export interface WeatherData {
     sunset: string
     sunsetEpoch: number
     moonphase: number
-  }
-  
+}

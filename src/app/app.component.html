@@ -1,4 +1,64 @@
-<div class="container">
+<div class="container" >
+  <div class="upper-data">
+    <img src="../assets/hot.png" *ngIf="14>15" >
+    <img src="../assets/cold.png" *ngIf="14<= 15">
+    <div class="weather-data">
+      <div class="location">Wellington</div>
+      <div class="temperature">{{14.40| number: '1.0-0'}}</div>
+    </div>
+  </div>
+  <div class="lower-data">
+    <div class="more-info-label">
+      More Information
+    </div>
+    <div class="more-info-container">
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../assets/min.png" alt="">
+          <span>Min</span>
+        </div>
+        <div class="info-block-value">
+          10°C
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../assets/max.png" alt="">
+          <span>Max</span>
+        </div>
+        <div class="info-block-value">
+          20°C
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../assets/humidity.png" alt="">
+          <span>Humidity</span>
+        </div>
+        <div class="info-block-value">
+          77%
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../assets/wind.png" alt="">
+          <span>Wind</span>
+        </div>
+        <div class="info-block-value">
+          11 Km/h
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+
+<!-- <div class="container">
   <div class="upper-data">
     <img src="../assets/hot.png" *ngIf="14 > 15">
     <img src="../assets/cold.png" *ngIf="14 <= 15">
@@ -55,6 +115,6 @@
     </div>
 
   </div>
-</div>
+</div> -->
 <router-outlet>
 </router-outlet>
