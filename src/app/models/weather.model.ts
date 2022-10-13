@@ -16,8 +16,8 @@ export interface WeatherData {
 export interface Day {
     datetime: string
     datetimeEpoch: number
-    temp_max: number
-    temp_min: number
+    tempmax: number
+    tempmin: number
     temp: number
     feelslikemax: number
     feelslikemin: number
