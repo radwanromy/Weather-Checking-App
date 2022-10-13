@@ -1,10 +1,10 @@
 <div class="container" *ngIf="weatherData">
   <div class="upper-data">
-    <img src="../assets/hot.png" *ngIf="weatherData.days[1].temp>15">
-    <img src="../assets/cold.png" *ngIf="weatherData.days[1].temp <= 15">
+    <img src="../assets/hot.png" *ngIf="(weatherData.days[1].temp-32)*.55555555556>15">
+    <img src="../assets/cold.png" *ngIf="(weatherData.days[1].temp-32)*.55555555556 <= 15">
     <div class="weather-data">
       <div class="location">{{weatherData.address}}</div>
-      <div class="temperature">{{weatherData.days[1].temp| number: '1.0-0'}}</div>
+      <div class="temperature">{{((weatherData.days[1].temp-32)*.55555555556).toFixed(2) | number: '1.0-0'}}</div>
     </div>
   </div>
   <div class="lower-data">
@@ -18,7 +18,7 @@
           <span>Min</span>
         </div>
         <div class="info-block-value">
-          {{weatherData.days[1].tempmin}}°C
+          {{((weatherData.days[1].tempmin-32)*.55555555556).toFixed(2)}}°C
         </div>
       </div>
 
@@ -28,7 +28,7 @@
           <span>Max</span>
         </div>
         <div class="info-block-value">
-          {{weatherData.days[1].tempmax}}°C
+          {{((weatherData.days[1].tempmax-32)*.55555555556).toFixed(2)}}°C
         </div>
       </div>
 
