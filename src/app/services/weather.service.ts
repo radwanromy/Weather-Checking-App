@@ -15,11 +15,12 @@ export class WeatherService {
       headers: new HttpHeaders()
         .set(environment.XRapidAPIHostHeaderName, environment.XRapidAPIHostHeaderValue)
         .set(environment.XRapidAPIKeyHeaderName, environment.XRapidAPIKeyHeaderValue),
+        // .set(environment.locationHeaderName, environment.locationHeaderValue),
       params: new HttpParams()
-        .set('location', cityName)
-        .set('units', 'metric')
-        .set('mode', 'json')
+        // .set(environment , cityName)
+        // .set('address' ,cityName)
+        .set('unitGroup', 'us') 
+        // .set('mode', 'json')
     })
   }
 }
-

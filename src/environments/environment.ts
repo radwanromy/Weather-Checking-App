@@ -4,11 +4,13 @@
 
 export const environment = {
   production: false,
-  weatherApiBaseUrl: 'https://bestweather.p.rapidapi.com/weather/london',
+  weatherApiBaseUrl: 'https://bestweather.p.rapidapi.com/weather/Dhaka',
   XRapidAPIHostHeaderName: 'X-RapidAPI-Host',
   XRapidAPIHostHeaderValue: 'bestweather.p.rapidapi.com',
   XRapidAPIKeyHeaderName: 'X-RapidAPI-Key',
-  XRapidAPIKeyHeaderValue: '7fca69b09bmsh4736d09212485c8p177302jsnf2b516df60f2'
+  XRapidAPIKeyHeaderValue: '8b98b467acmsh9cc503a20120e75p15e142jsn92b153c9699f',
+  // locationHeaderName: 'location',
+  // locationHeaderValue: 'Wellington',
 };
 
 /*

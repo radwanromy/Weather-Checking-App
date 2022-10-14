@@ -1,3 +1,9 @@
+<div class="search">
+  <form #foorm="ngForm" (submit)="onSubmit()">
+    <input type="text" placeholder="Search City" name="city" [(ngModel)]="cityName">
+  </form>
+</div>
+
 <div class="container" *ngIf="weatherData">
   <div class="upper-data">
     <img src="../assets/hot.png" *ngIf="(weatherData.days[1].temp-32)*(5/9)>15">
