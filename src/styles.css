@@ -1,12 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
+  background-image: url(../src/assets/25501.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   --blue-1: #3C429E;
   --blue-2: #4C52AD;
   --yellow-1: #FAC742;
   --white: #FFF;
   --grey-1: #EDEDED;
-  --shadow-dark: rgba(0,0,0,0.3);
-  --shadow-light: rgba(255,255,255,0.1);
+  --shadow-dark: rgba(0, 0, 0, 0.3);
+  --shadow-light: rgba(255, 255, 255, 0.1);
 }
 
 * {
@@ -20,7 +24,8 @@ body {
   font-size: 16px;
   width: 100%;
   height: 100vh;
-  background-color: var(--blue-1);
+  /* background-color: var(--blue-1); */
+  /* background-image: url(../src/assets/25501.jpg); */
 
   display: flex;
   justify-content: center;
@@ -143,12 +148,13 @@ body {
 }
 
 .search input {
-  background-color: var(--shadow-light);
+  background-color: var(--white);
   outline: none;
   border: none;
   border-radius: 20px;
   padding: 1em;
-  color: var(--grey-1);
+  color: var(--white);
   font-size: 0.8em;
   text-align: center;
+
 }
